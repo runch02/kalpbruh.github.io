@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+a, input, button, textarea, * {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: aquamarine;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    /* background: linear-gradient(darkcyan, darkslategray); */
+}
+
+/*
+#theme {
+    border: hidden;
+    border-radius: 0.25rem;
+    background: linear-gradient(darkcyan, darkslategray);
+    padding: 0.25rem;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+} */
+
+header {
+    /* width: 100vw; */
+    height: 3rem;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    background: darkslategray;
+}
+
+header a {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1;
+    /* text-decoration: underline black; */
+    background: #3e3e3e;
+}
+
+main {
+    width: 50vw;
+    margin: 2rem auto;
+    padding: 0.9rem;
+    background: #3e3e3e;
+    border-radius: 0.25rem;
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.5);
+    color: gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image img {
+    height: fit-content;
+    width: 200px;
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+main h1 {
+    font-size: 4rem;
+}
+main span {
+    font-family: cursive;
+}
+
+.gallary {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    /* margin: 1.5rem; */
+}
+
+.gallary img {
+    width: 250px;
+    height: fit-content;
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.gallary a {
+    color: black;
+    text-decoration: underline darkcyan;
+}
+
+.gallary-heading, .youtube-heading {
+    text-align: center;
+    margin: 1.5rem auto;
+}
+
+.youtube {
+    margin: 2rem;
+}
+
+.youtube iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 0.25rem;
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+footer a {
+    color: black;
+    font-family: 600;
+    background: linear-gradient(darkcyan, darkslategray);
+    padding: 0.25rem;
+    border: hidden;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    font-weight: 800;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    main {
+        width: 90vw;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    main h1 {
+        font-size: 3rem;
+    }
+
+    main .image img {
+        width: 240px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    header {
+        text-align: left;
+    }
+
+    main h1 {
+        font-size: 2.5rem;
+    }
+
+    main .image img {
+        width: 220px;
+    }
+}
